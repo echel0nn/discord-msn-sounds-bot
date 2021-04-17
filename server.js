@@ -49,7 +49,7 @@ bot.on('presenceUpdate', (oldPresence, newPresence) => {
                         }).catch(err => console.log(err));
 
                 channel = bot.channels.cache.get("832574432153042965");
-                channel.send("hosgeldın " + newPresence.member.nickname);
+                channel.send("welcome " + newPresence.member.nickname);
 
             } else if (newPresence.status === "offline") {
                 last_channel.join().then(connection =>
@@ -60,7 +60,7 @@ bot.on('presenceUpdate', (oldPresence, newPresence) => {
                                 });
                         }).catch(err => console.log(err));
                 channel = bot.channels.cache.get("832574432153042965");
-                channel.send("gorusuruz alla emanet ol " + newPresence.member.nickname);
+                channel.send("bye " + newPresence.member.nickname);
             }
             // etc...
         }
