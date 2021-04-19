@@ -16,6 +16,7 @@ function majority(){
                         temp_channel = channel;
                 }
         }
+        if(temp_channel != null)
         last_channel = temp_channel[1];
         console.log(last_channel);
 }
